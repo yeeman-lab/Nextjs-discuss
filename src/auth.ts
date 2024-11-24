@@ -23,6 +23,7 @@ export const {
       clientSecret: GITHUB_CLIENT_SECRET,
     }),
   ],
+  secret: process.env.AUTH_SECRET,
   callbacks: {
     // will not need in the future if the bug in nextauth fixed
     async session({ session, user }: { session: Session; user: DefaultSession["user"] }) {
