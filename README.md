@@ -106,6 +106,56 @@ src/
 - **`/src/actions`**: Houses server-side actions for data handling.
 - **`/src/api/`**: Contains API route handlers.
 
+## Demonstrations
+
+### 1. Homepage Before Signup
+
+This image showcases the homepage when the user is not authenticated. The page includes:
+
+- A list of **Top Posts** displayed in the main content area.
+- A **sidebar** for topic management, showing options to create a new topic and a list of existing topics.
+- The **header** displays **Sign In / Sign Up buttons** for user authentication.
+
+![Homepage Before Signup](public/signOut.png)
+
+### 2. Header After Sign In
+
+This image highlights the header component after a user has successfully signed in:
+
+- The **Sign In / Sign Up buttons** are replaced with a user icon.
+- A **Popover menu** is available, providing option of signing out.
+
+![Header After Sign In](public/afterSignin.png)
+
+### 3. Create Topic Form with Validation
+
+Here, the **Create Topic Form** is displayed inside a popover, allowing users to add a new topic:
+
+- The form uses **zod** for schema validation and **useFormState** for managing form state.
+- The validation feedback appears when the user submits invalid or incomplete input, guiding them to correct it.
+
+![Create Topic Form](public/validation.png)
+
+### 4. Topic Show Page
+
+This image demonstrates the **Topic Show Page**, which lists all posts under a specific topic:
+
+- The **topic slug** is displayed prominently at the top.
+- Each post in the topic is shown with its **title**, **author**, and count of **comments**.
+- The list of posts displayed here is a **reusable component** that is also used to render the **Top Posts** list on the homepage.
+
+![Topic Show Page](public/topicShowPage.png)
+
+### 5. Post Show Page
+
+This image illustrates the **Post Show Page**, where the details of a specific post are displayed:
+
+- The post’s **title** and full **content** are shown.
+- Below the post, a list of **comments** is available, including nested comments with parent-child relationships.
+- Users can engage with the content by adding their own comments or replying to others.
+
+![Post Show Page](public/postShowPage.png)
+
 ## License
 
 This project is licensed under the MIT License.
