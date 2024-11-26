@@ -125,7 +125,7 @@ This image highlights the header component after a user has successfully signed 
 - The **Sign In / Sign Up buttons** are replaced with a user icon.
 - A **Popover menu** is available, providing option of signing out.
 
-![Header After Sign In](public/afterSignin.png)
+![Header After Sign In](public/afterSignIn.png)
 
 ### 3. Create Topic Form with Validation
 
